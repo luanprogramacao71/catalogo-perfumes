@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="AR Stories - Catálogo de perfumes importados e árabes. Fragrâncias selecionadas com sofisticação. Pedidos via WhatsApp." />
+    <title>AR Stories — Perfumes Importados &amp; Árabes</title>
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="icon" href="src/img/ar.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome (ÍCONE DO WHATSAPP) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      crossorigin="anonymous"
+    />
+
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="src/css/style.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/logo.png" />
+</head>
+<body>
+
+    <!-- ============================================ -->
+    <!-- HEADER FIXO — Logo + Nome + Subtítulo        -->
+    <!-- ============================================ -->
+    <header class="site-header" data-testid="site-header">
+        <div class="header-inner">
+            <a href="#" class="brand" data-testid="brand-link" aria-label="AR Stories — Início">
+                <img src="src/img/ar.png" alt="AR Stories Perfumes" class="brand-logo" data-testid="brand-logo" />
+                <div class="brand-text">
+                    <h1 class="brand-name" data-testid="brand-name">AR Stories</h1>
+                    <p class="brand-tagline" data-testid="brand-tagline">Perfumes Importados &amp; Árabes</p>
+                </div>
+            </a>
+
+            <!-- Navegação simples por âncora -->
+            <nav class="site-nav" data-testid="site-nav" aria-label="Navegação principal">
+                <a href="#catalogo" class="nav-link" data-testid="nav-catalog">Catálogo</a>
+                <a href="#sobre" class="nav-link" data-testid="nav-about">Sobre</a>
+                <a href="https://wa.me/558592777467?text=Ol%C3%A1%20%F0%9F%91%8B%0A%0AObrigado%20por%20entrar%20em%20contato%20com%20a%20AR%20Stories%20Perfumes.%0A%0APara%20agilizar%20seu%20atendimento%2C%20por%20favor%20envie%3A%0A%E2%80%A2%20Seu%20nome%0A%E2%80%A2%20O%20perfume%20de%20interesse%0A%E2%80%A2%20Se%20procura%20%C3%A1rabe%2C%20importado%20ou%20Brand%20Collection%0A%0ANosso%20atendimento%20%C3%A9%20exclusivo%20e%20retornaremos%20o%20mais%20r%C3%A1pido%20poss%C3%ADvel."class="nav-link nav-cta"data-testid="nav-whatsapp"target="_blank"rel="noopener"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i><span>WhatsApp</span></a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ============================================ -->
+    <!-- HERO — Apresentação discreta                  -->
+    <!-- ============================================ -->
+    <section class="hero" data-testid="hero-section">
+        <div class="hero-inner">
+            <span class="hero-eyebrow" data-testid="hero-eyebrow">— Coleção AR Stories —</span>
+            <h2 class="hero-title" data-testid="hero-title">Fragrâncias selecionadas<br/><em>com sofisticação</em></h2>
+            <p class="hero-subtitle" data-testid="hero-subtitle">Importados &amp; Árabes • Brand Collection</p>
+            <div class="hero-divider" aria-hidden="true">
+                <span class="line"></span>
+                <span class="diamond">◆</span>
+                <span class="line"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- FILTROS DECORATIVOS (apenas visuais — sem JS) -->
+    <!-- ============================================ -->
+    <section class="filters" data-testid="filters-section" aria-label="Categorias">
+        <div class="filters-inner">
+            <span class="filter-chip filter-chip--active" data-testid="filter-all">Todos</span>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- CATÁLOGO — Grid estilo Instagram              -->
+    <!-- ============================================ -->
+    <main id="catalogo" class="catalog" data-testid="catalog-section">
+        <div class="catalog-grid" data-testid="catalog-grid">
+
+            <!-- Produto 1 -->
+             
+<article class="product-card" data-testid="product-card-2">
+
+  <!-- CARROSSEL DE IMAGENS -->
+  <div class="product-image-carousel">
+
+    <button class="carousel-btn prev" onclick="prevImage(this)">‹</button>
+
+    <div class="carousel-track">
+      <img
+        src="src/img/brand021.png"
+        class="active clickable-image"
+        alt="Perfume frente"
+        onclick="openImage(this.src)"
+      >
+      <img
+        src="src/img/brand021-2.png"
+        class="clickable-image"
+        alt="Perfume caixa"
+        onclick="openImage(this.src)"
+      >
+    </div>
+
+    <button class="carousel-btn next" onclick="nextImage(this)">›</button>
+
+    <!-- PREÇO -->
+    <span class="product-price">R$ 300,00</span>
+  </div>
+
+  <!-- INFORMAÇÕES -->
+  <div class="product-info">
+    <h3 class="product-name">Brand Collection Nº 021</h3>
+
+    <span class="product-category">
+      Feminino · Oriental Floral · 25ml
+    </span>
+    
+    <a
+      href="https://wa.me/558592777467?text=Olá 👋%0A%0ATenho interesse no perfume:%0ABrand Collection Nº 021%0AFeminino · Oriental Floral · 25ml%0AValor: R$ 69,90"
+      target="_blank"
+      rel="noopener"
+      class="btn-whatsapp"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+      Comprar pelo WhatsApp
+    </a>
+  </div>
+
+</article>
+
+            <!-- Produto 2 -->
+<article class="product-card" data-testid="product-card-2">
+
+  <!-- CARROSSEL DE IMAGENS -->
+  <div class="product-image-carousel">
+
+    <button class="carousel-btn prev" onclick="prevImage(this)">‹</button>
+
+    <div class="carousel-track">
+      <img
+        src="src/img/brand097.png"
+        class="active clickable-image"
+        alt="Perfume frente"
+        onclick="openImage(this.src)"
+      >
+      <img
+        src="src/img/brand097-2.png"
+        class="clickable-image"
+        alt="Perfume caixa"
+        onclick="openImage(this.src)"
+      >
+    </div>
+
+    <button class="carousel-btn next" onclick="nextImage(this)">›</button>
+
+    <!-- PREÇO -->
+    <span class="product-price">R$ 250,00</span>
+  </div>
+
+  <!-- INFORMAÇÕES -->
+  <div class="product-info">
+    <h3 class="product-name">Brand Collection Nº 097</h3>
+
+    <span class="product-category">
+      Euphoria · Frutal Floral · 25ml
+    </span>
+
+    <a
+      href="https://wa.me/558592777467?text=Olá 👋%0A%0ATenho interesse no perfume:%0ABrand Collection Nº 097%0AEuphoria · Frutal Floral · 25ml%0AValor: R$ 150,00"
+      target="_blank"
+      rel="noopener"
+      class="btn-whatsapp"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+      Comprar pelo WhatsApp
+    </a>
+  </div>
+
+</article>
+            <!-- Produto 3 -->
+<article class="product-card" data-testid="product-card-2">
+
+  <!-- CARROSSEL DE IMAGENS -->
+  <div class="product-image-carousel">
+
+    <button class="carousel-btn prev" onclick="prevImage(this)">‹</button>
+
+    <div class="carousel-track">
+      <img
+        src="src/img/arbicA040.png"
+        class="active clickable-image"
+        alt="Perfume frente"
+        onclick="openImage(this.src)"
+      >
+      <img
+        src="src/img/arbicA040-2.png"
+        class="clickable-image"
+        alt="Perfume caixa"
+        onclick="openImage(this.src)"
+      >
+    </div>
+
+    <button class="carousel-btn next" onclick="nextImage(this)">›</button>
+
+    <!-- PREÇO -->
+    <span class="product-price">R$ 150,00</span>
+  </div>
+
+  <!-- INFORMAÇÕES -->
+  <div class="product-info">
+    <h3 class="product-name">Arabic A040</h3>
+
+    <span class="product-category">
+      Feminino · Oriental Floral · 25ml
+    </span>
+
+    <a
+      href="https://wa.me/558592777467?text=Olá 👋%0A%0ATenho interesse no perfume:%0AArabic A040%0AFeminino · Oriental Floral · 25ml%0AValor: R$ 150,00"
+      target="_blank"
+      rel="noopener"
+      class="btn-whatsapp"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+      Comprar pelo WhatsApp
+    </a>
+  </div>
+
+</article>
+            <!-- Produto 4 -->
+<article class="product-card" data-testid="product-card-2">
+
+  <!-- CARROSSEL DE IMAGENS -->
+  <div class="product-image-carousel">
+
+    <button class="carousel-btn prev" onclick="prevImage(this)">‹</button>
+
+    <div class="carousel-track">
+      <img
+        src="src/img/brand175.png"
+        class="active clickable-image"
+        alt="Perfume frente"
+        onclick="openImage(this.src)"
+      >
+      <img
+        src="src/img/brand175-2.png"
+        class="clickable-image"
+        alt="Perfume caixa"
+        onclick="openImage(this.src)"
+      >
+    </div>
+
+    <button class="carousel-btn next" onclick="nextImage(this)">›</button>
+
+    <!-- PREÇO -->
+    <span class="product-price">R$ 100,00</span>
+  </div>
+
+  <!-- INFORMAÇÕES -->
+  <div class="product-info">
+    <h3 class="product-name">Brand Collection Nº 175
+    </h3>
+
+    <span class="product-category">
+      Masculino · Amadeirado · 25ml
+    </span>
+
+    <a
+      href="https://wa.me/558592777467?text=Olá 👋%0A%0ATenho interesse no perfume:%0ABrand Collection Nº 175%0AMasculino · Amadeirado · 25ml%0AValor: R$ 180,00"
+      target="_blank"
+      rel="noopener"
+      class="btn-whatsapp"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+      Comprar pelo WhatsApp
+    </a>
+  </div>
+
+</article>
+
+            <!-- Produto 5 -->
+<article class="product-card" data-testid="product-card-5">
+
+  <div class="product-image-carousel">
+
+    <button class="carousel-btn prev" onclick="prevImage(this)">‹</button>
+
+    <div class="carousel-track">
+      <img
+        src="src/img/musan.jpeg"
+        class="active clickable-image"
+        alt="Arabic Musam Branco A018"
+        onclick="openImage(this.src)"
+      >
+      <img
+        src="src/img/musan2.jpeg"
+        class="clickable-image"
+        alt="Arabic Musam Branco A018 Notas"
+        onclick="openImage(this.src)"
+      >
+    </div>
+
+    <button class="carousel-btn next" onclick="nextImage(this)">›</button>
+
+    <span class="product-price">R$ 150,00</span>
+  </div>
+
+  <div class="product-info">
+    <h3 class="product-name">Arabic Musam Branco A018</h3>
+
+    <span class="product-category">
+      Unissex · Baunilha · 25ml
+    </span>
+
+    <a
+      href="https://wa.me/558592777467?text=Olá 👋%0A%0ATenho interesse no perfume:%0AArabic Musam Branco A018%0AUnissex · Baunilha · 25ml%0AValor: R$ 180,00"
+      target="_blank"
+      rel="noopener"
+      class="btn-whatsapp"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+      Comprar pelo WhatsApp
+    </a>
+  </div>
+
+</article>
+
+            <!-- Produto 6 -->
+<article class="product-card" data-testid="product-card-6">
+
+  <div class="product-image-carousel">
+
+    <button class="carousel-btn prev" onclick="prevImage(this)">‹</button>
+
+    <div class="carousel-track">
+      <img
+        src="src/img/brand070.jpeg"
+        class="active clickable-image"
+        alt="Brand Collection Nº 070"
+        onclick="openImage(this.src)"
+      >
+      <img
+        src="src/img/brand070-2.jpeg"
+        class="clickable-image"
+        alt="Brand Collection Nº 070 Notas"
+        onclick="openImage(this.src)"
+      >
+    </div>
+
+    <button class="carousel-btn next" onclick="nextImage(this)">›</button>
+
+    <span class="product-price">R$ 200,00</span>
+  </div>
+
+  <div class="product-info">
+    <h3 class="product-name">Brand Collection Nº 070</h3>
+
+    <span class="product-category">
+      Masculino · Amadeirado · 25ml
+    </span>
+
+    <a
+      href="https://wa.me/558592777467?text=Olá 👋%0A%0ATenho interesse no perfume:%0ABrand Collection Nº 070%0AMasculino · Amadeirado · 25ml%0AValor: R$ 180,00"
+      target="_blank"
+      rel="noopener"
+      class="btn-whatsapp"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+      Comprar pelo WhatsApp
+    </a>
+  </div>
+
+</article>
+
+            <!-- Produto 7 -->
+<article class="product-card" data-testid="product-card-7">
+
+  <div class="product-image-carousel">
+
+    <button class="carousel-btn prev" onclick="prevImage(this)">‹</button>
+
+    <div class="carousel-track">
+      <img
+        src="src/img/brand159.jpeg"
+        class="active clickable-image"
+        alt="Brand Collection Nº 159"
+        onclick="openImage(this.src)"
+      >
+      <img
+        src="src/img/brand159-2.jpeg"
+        class="clickable-image"
+        alt="Brand Collection Nº 159 Notas"
+        onclick="openImage(this.src)"
+      >
+    </div>
+
+    <button class="carousel-btn next" onclick="nextImage(this)">›</button>
+
+    <span class="product-price">R$ 180,00</span>
+  </div>
+
+  <div class="product-info">
+    <h3 class="product-name">Brand Collection Nº 159</h3>
+
+    <span class="product-category">
+      Feminino · Floral Branco · 25ml
+    </span>
+
+    <a
+      href="https://wa.me/558592777467?text=Olá 👋%0A%0ATenho interesse no perfume:%0ABrand Collection Nº 159%0AFeminino · Floral Frutado Gourmet · 25ml%0AValor: R$ 180,00"
+      target="_blank"
+      rel="noopener"
+      class="btn-whatsapp"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+      Comprar pelo WhatsApp
+    </a>
+  </div>
+
+</article>
+
+            <!-- Produto 8 -->
+            <article class="product-card" data-testid="product-card-7">
+
+  <div class="product-image-carousel">
+
+    <button class="carousel-btn prev" onclick="prevImage(this)">‹</button>
+
+    <div class="carousel-track">
+      <img
+        src="src/img/arabicA001.jpeg"
+        class="active clickable-image"
+        alt="Arabic Majestade A001"
+        onclick="openImage(this.src)"
+      >
+      <img
+        src="src/img/arabicA001-2.jpeg"
+        class="clickable-image"
+        alt="Arabic Majestade A001 Notas"
+        onclick="openImage(this.src)"
+      >
+    </div>
+
+    <button class="carousel-btn next" onclick="nextImage(this)">›</button>
+
+    <span class="product-price">R$ 200,00</span>
+  </div>
+
+  <div class="product-info">
+    <h3 class="product-name">Arabic Majestade A001</h3>
+
+    <span class="product-category">
+      Masculino · Baunilha · 25ml
+    </span>
+
+    <a
+      href="https://wa.me/558592777467?text=Olá 👋%0A%0ATenho interesse no perfume:%0AArabic Majestade A001%0AMasculino · Baunilha · 25ml%0AValor: R$ 200,00"
+      target="_blank"
+      rel="noopener"
+      class="btn-whatsapp"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+      Comprar pelo WhatsApp
+    </a>
+  </div>
+
+</article>
+
+            <!-- Produto 9 -->
+            <article class="product-card" data-testid="product-card-7">
+
+  <div class="product-image-carousel">
+
+    <button class="carousel-btn prev" onclick="prevImage(this)">‹</button>
+
+    <div class="carousel-track">
+      <img
+        src="src/img/ambarA024.jpeg"
+        class="active clickable-image"
+        alt="Ambar A024"
+        onclick="openImage(this.src)"
+      >
+      <img
+        src="src/img/ambarA024-2.jpeg"
+        class="clickable-image"
+        alt="Ambar A024 Notas"
+        onclick="openImage(this.src)"
+      >
+    </div>
+
+    <button class="carousel-btn next" onclick="nextImage(this)">›</button>
+
+    <span class="product-price">R$ 150,00</span>
+  </div>
+
+  <div class="product-info">
+    <h3 class="product-name">Ambar A024</h3>
+
+    <span class="product-category">
+      Unissex · Doce · 25ml
+    </span>
+
+    <a
+      href="https://wa.me/558592777467?text=Olá 👋%0A%0ATenho interesse no perfume:%0AAmbar A024%0AUnissex · Doce · 25ml%0AValor: R$ 150,00"
+      target="_blank"
+      rel="noopener"
+      class="btn-whatsapp"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+      Comprar pelo WhatsApp
+    </a>
+  </div>
+
+</article>
+
+            <!-- Produto 10 -->
+            <article class="product-card" data-testid="product-card-7">
+
+  <div class="product-image-carousel">
+
+    <button class="carousel-btn prev" onclick="prevImage(this)">‹</button>
+
+    <div class="carousel-track">
+      <img
+        src="src/img/arbicA037.jpeg"
+        class="active clickable-image"
+        alt="Arabic A037"
+        onclick="openImage(this.src)"
+      >
+      <img
+        src="src/img/arbicA037-2.jpeg"
+        class="clickable-image"
+        alt="Arabic A037 Notas"
+        onclick="openImage(this.src)"
+      >
+    </div>
+
+    <button class="carousel-btn next" onclick="nextImage(this)">›</button>
+
+    <span class="product-price">R$ 250,00</span>
+  </div>
+
+  <div class="product-info">
+    <h3 class="product-name">Arabic A037</h3>
+
+    <span class="product-category">
+      Feminino · Tropical · 25ml
+    </span>
+
+    <a
+      href="https://wa.me/558592777467?text=Olá 👋%0A%0ATenho interesse no perfume:%0AArabic A037%0AFeminino · Tropical · 25ml%0AValor: R$ 250,00"
+      target="_blank"
+      rel="noopener"
+      class="btn-whatsapp"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+      Comprar pelo WhatsApp
+    </a>
+  </div>
+
+</article>
+
+            <!-- Produto 11 -->
+            <article class="product-card" data-testid="product-card-7">
+
+  <div class="product-image-carousel">
+
+    <button class="carousel-btn prev" onclick="prevImage(this)">‹</button>
+
+    <div class="carousel-track">
+      <img
+        src="src/img/brand159.jpeg"
+        class="active clickable-image"
+        alt="Brand Collection Nº 159"
+        onclick="openImage(this.src)"
+      >
+      <img
+        src="src/img/brand159-2.jpeg"
+        class="clickable-image"
+        alt="Brand Collection Nº 159 Notas"
+        onclick="openImage(this.src)"
+      >
+    </div>
+
+    <button class="carousel-btn next" onclick="nextImage(this)">›</button>
+
+    <span class="product-price">R$ 180,00</span>
+  </div>
+
+  <div class="product-info">
+    <h3 class="product-name">Brand Collection Nº 159</h3>
+
+    <span class="product-category">
+      Feminino · Floral Branco · 25ml
+    </span>
+
+    <a
+      href="https://wa.me/558592777467?text=Olá 👋%0A%0ATenho interesse no perfume:%0ABrand Collection Nº 159%0AFeminino · Floral Frutado Gourmet · 25ml%0AValor: R$ 180,00"
+      target="_blank"
+      rel="noopener"
+      class="btn-whatsapp"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+      Comprar pelo WhatsApp
+    </a>
+  </div>
+
+</article>
+
+            <!-- Produto 12 -->
+            <article class="product-card" data-testid="product-card-7">
+
+  <div class="product-image-carousel">
+
+    <button class="carousel-btn prev" onclick="prevImage(this)">‹</button>
+
+    <div class="carousel-track">
+      <img
+        src="src/img/brand194.jpeg"
+        class="active clickable-image"
+        alt="Brand Collection Nº 194"
+        onclick="openImage(this.src)"
+      >
+      <img
+        src="src/img/brand194-2.jpeg"
+        class="clickable-image"
+        alt="Brand Collection Nº 194 Notas"
+        onclick="openImage(this.src)"
+      >
+    </div>
+
+    <button class="carousel-btn next" onclick="nextImage(this)">›</button>
+
+    <span class="product-price">R$ 200,00</span>
+  </div>
+
+  <div class="product-info">
+    <h3 class="product-name">Brand Collection Nº 194</h3>
+
+    <span class="product-category">
+      Feminino · Doce · 25ml
+    </span>
+
+    <a
+      href="https://wa.me/558592777467?text=Olá 👋%0A%0ATenho interesse no perfume:%0ABrand Collection Nº 194%0AFeminino · Doce · 25ml%0AValor: R$ 200,00"
+      target="_blank"
+      rel="noopener"
+      class="btn-whatsapp"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+      Comprar pelo WhatsApp
+    </a>
+  </div>
+
+</article>
+            <!-- Produto 13 -->
+            <article class="product-card" data-testid="product-card-7">
+
+  <div class="product-image-carousel">
+
+    <button class="carousel-btn prev" onclick="prevImage(this)">‹</button>
+
+    <div class="carousel-track">
+      <img
+        src="src/img/brand286.jpeg"
+        class="active clickable-image"
+        alt="Brand Collection Nº 286"
+        onclick="openImage(this.src)"
+      >
+      <img
+        src="src/img/brand286.jpeg"
+        class="clickable-image"
+        alt="Brand Collection Nº 286 Notas"
+        onclick="openImage(this.src)"
+      >
+    </div>
+
+    <button class="carousel-btn next" onclick="nextImage(this)">›</button>
+
+    <span class="product-price">R$ 180,00</span>
+  </div>
+
+  <div class="product-info">
+    <h3 class="product-name">Brand Collection Nº 286</h3>
+
+    <span class="product-category">
+      Masculino · Amadeirado · 25ml
+    </span>
+
+    <a
+      href="https://wa.me/558592777467?text=Olá 👋%0A%0ATenho interesse no perfume:%0ABrand Collection Nº 286%0AMasculino · Amadeirado · 25ml%0AValor: R$ 180,00"
+      target="_blank"
+      rel="noopener"
+      class="btn-whatsapp"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+      Comprar pelo WhatsApp
+    </a>
+  </div>
+
+</article>
+
+            <!-- Produto 14 -->
+            <article class="product-card" data-testid="product-card-7">
+
+  <div class="product-image-carousel">
+
+    <button class="carousel-btn prev" onclick="prevImage(this)">‹</button>
+
+    <div class="carousel-track">
+      <img
+        src="src/img/brand349.jpeg"
+        class="active clickable-image"
+        alt="Brand Collection Nº 349"
+        onclick="openImage(this.src)"
+      >
+      <img
+        src="src/img/brand349.jpeg"
+        class="clickable-image"
+        alt="Brand Collection Nº 349 Notas"
+        onclick="openImage(this.src)"
+      >
+    </div>
+
+    <button class="carousel-btn next" onclick="nextImage(this)">›</button>
+
+    <span class="product-price">R$ 200,00</span>
+  </div>
+
+  <div class="product-info">
+    <h3 class="product-name">Brand Collection Nº 349</h3>
+
+    <span class="product-category">
+      Feminino · Doce · 25ml
+    </span>
+
+    <a
+      href="https://wa.me/558592777467?text=Olá 👋%0A%0ATenho interesse no perfume:%0ABrand Collection Nº 349%0AFeminino · Floral Branco · 25ml%0AValor: R$ 200,00"
+      target="_blank"
+      rel="noopener"
+      class="btn-whatsapp"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+      Comprar pelo WhatsApp
+    </a>
+  </div>
+
+</article>
+            <!-- Produto 15 -->
+            <article class="product-card" data-testid="product-card-7">
+
+  <div class="product-image-carousel">
+
+    <button class="carousel-btn prev" onclick="prevImage(this)">‹</button>
+
+    <div class="carousel-track">
+      <img
+        src="src/img/brand177.jpeg"
+        class="active clickable-image"
+        alt="Brand Collection Nº 177"
+        onclick="openImage(this.src)"
+      >
+      <img
+        src="src/img/brand177.jpeg"
+        class="clickable-image"
+        alt="Brand Collection Nº 177 Notas"
+        onclick="openImage(this.src)"
+      >
+    </div>
+
+    <button class="carousel-btn next" onclick="nextImage(this)">›</button>
+
+    <span class="product-price">R$ 250,00</span>
+  </div>
+
+  <div class="product-info">
+    <h3 class="product-name">Brand Collection Nº 177</h3>
+
+    <span class="product-category">
+      Feminino · Floral Branco · 25ml
+    </span>
+
+    <a
+      href="https://wa.me/558592777467?text=Olá 👋%0A%0ATenho interesse no perfume:%0ABrand Collection Nº 177%0AFeminino · Floral Branco · 25ml%0AValor: R$ 250,00"
+      target="_blank"
+      rel="noopener"
+      class="btn-whatsapp"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+      Comprar pelo WhatsApp
+    </a>
+  </div>
+
+</article>
+
+            <!-- Produto 16 -->
+            <article class="product-card" data-testid="product-card-7">
+
+  <div class="product-image-carousel">
+
+    <button class="carousel-btn prev" onclick="prevImage(this)">‹</button>
+
+    <div class="carousel-track">
+      <img
+        src="src/img/candy.jpeg"
+        class="active clickable-image"
+        alt="Arabic Candy"
+        onclick="openImage(this.src)"
+      >
+      <img
+        src="src/img/candy.jpeg"
+        class="clickable-image"
+        alt="Arabic Candy Notas"
+        onclick="openImage(this.src)"
+      >
+    </div>
+
+    <button class="carousel-btn next" onclick="nextImage(this)">›</button>
+
+    <span class="product-price">R$ 180,00</span>
+  </div>
+
+  <div class="product-info">
+    <h3 class="product-name">Arabic Candy</h3>
+
+    <span class="product-category">
+      Feminino · Rosa · 25ml
+    </span>
+
+    <a
+      href="https://wa.me/558592777467?text=Olá 👋%0A%0ATenho interesse no perfume:%0AArabic Candy%0AFeminino · Rosa · 25ml%0AValor: R$ 180,00"
+      target="_blank"
+      rel="noopener"
+      class="btn-whatsapp"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+      Comprar pelo WhatsApp
+    </a>
+  </div>
+
+</article>
+
+        </div>
+
+        <!-- Nota sutil sobre imagens -->
+        <p class="catalog-note" data-testid="catalog-note">
+            Catálogo visual em atualização. Para fotos e disponibilidade, fale conosco no WhatsApp.
+        </p>
+    </main>
+
+    <!-- ============================================ -->
+    <!-- SOBRE — Bloco institucional discreto         -->
+    <!-- ============================================ -->
+    <section id="sobre" class="about" data-testid="about-section">
+        <div class="about-inner">
+            <span class="about-eyebrow">— Sobre nós —</span>
+            <h2 class="about-title">A arte de selecionar fragrâncias</h2>
+            <p class="about-text">
+                <strong>AR Stories</strong> é dedicada à curadoria de perfumes importados
+                e árabes de alto padrão. Cada fragrância é escolhida pensando em
+                exclusividade, presença e elegância — para quem entende que perfume
+                é assinatura.
+            </p>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- RODAPÉ — Pedidos via WhatsApp                -->
+    <!-- ============================================ -->
+    <footer class="site-footer" data-testid="site-footer">
+        <div class="footer-inner">
+            <img src="src/img/ar.png" alt="AR Stories" class="footer-logo" data-testid="footer-logo" />
+
+            <a href="https://wa.me/558592777467?text=Ol%C3%A1%20%F0%9F%91%8B%0A%0AObrigado%20por%20entrar%20em%20contato%20com%20a%20AR%20Stories%20Perfumes.%0A%0APara%20agilizar%20seu%20atendimento%2C%20por%20favor%20envie%3A%0A%E2%80%A2%20Seu%20nome%0A%E2%80%A2%20O%20perfume%20de%20interesse%0A%E2%80%A2%20Se%20procura%20%C3%A1rabe%2C%20importado%20ou%20Brand%20Collection%0A%0ANosso%20atendimento%20%C3%A9%20exclusivo%20e%20retornaremos%20o%20mais%20r%C3%A1pido%20poss%C3%ADvel."
+               class="whatsapp-btn"
+               data-testid="footer-whatsapp-btn"
+               target="_blank"
+               rel="noopener"
+               aria-label="Fazer pedido via WhatsApp">
+                <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.297-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
+                Pedidos via WhatsApp
+            </a>
+
+            <p class="footer-text" data-testid="footer-text">
+                <span class="footer-line">— Atendimento exclusivo —</span>
+                Fragrâncias selecionadas com carinho
+            </p>
+
+            <p class="footer-copyright" data-testid="footer-copyright">
+                © 2026 AR Stories Perfumes • Importados &amp; Árabes
+            </p>
+        </div>
+    </footer>
+
+    <!-- WHATSAPP FLOATING -->
+  <a class="whatsapp-fab" href="https://wa.me/558592777467?text=Ol%C3%A1%20%F0%9F%91%8B%0A%0AObrigado%20por%20entrar%20em%20contato%20com%20a%20AR%20Stories%20Perfumes.%0A%0APara%20agilizar%20seu%20atendimento%2C%20por%20favor%20envie%3A%0A%E2%80%A2%20Seu%20nome%0A%E2%80%A2%20O%20perfume%20de%20interesse%0A%E2%80%A2%20Se%20procura%20%C3%A1rabe%2C%20importado%20ou%20Brand%20Collection%0A%0ANosso%20atendimento%20%C3%A9%20exclusivo%20e%20retornaremos%20o%20mais%20r%C3%A1pido%20poss%C3%ADvel.">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="whatsapp-fab__pulse" aria-hidden="true"></span>
+  </a>
+
+  <script>
+function nextImage(button) {
+  const carousel = button.parentElement;
+  const images = carousel.querySelectorAll('img');
+  let index = [...images].findIndex(img => img.classList.contains('active'));
+
+  images[index].classList.remove('active');
+  index = (index + 1) % images.length;
+  images[index].classList.add('active');
+}
+
+function prevImage(button) {
+  const carousel = button.parentElement;
+  const images = carousel.querySelectorAll('img');
+  let index = [...images].findIndex(img => img.classList.contains('active'));
+
+  images[index].classList.remove('active');
+  index = (index - 1 + images.length) % images.length;
+  images[index].classList.add('active');
+}
+</script>
+
+<div id="image-modal" class="image-modal" onclick="closeImage()">
+  <img id="modal-img" src="">
+</div>
+
+<script>
+function openImage(src) {
+  const modal = document.getElementById('image-modal');
+  const modalImg = document.getElementById('modal-img');
+
+  modalImg.src = src;
+  modal.style.display = 'flex';
+}
+
+function closeImage() {
+  document.getElementById('image-modal').style.display = 'none';
+}
+</script>
+
+</body>
+</html>
